@@ -1,0 +1,69 @@
+<div class="bg-[#F0F0F7] text-black w-screen h-full border">
+  <div class="md:flex flex-wrap mx-3 gap-8 justify-center h-full my-3">
+    <div class="md:w-[33%]">
+      <div class="rounded-lg my-4 bg-white shadow-md h-[47%]">
+        <div class="flex justify-between items-center px-5 py-4">
+          <h1 class="font-bold text-lg">Team Members</h1>
+          <h4 class="text-[#AEADB3] text-sm">View All</h4>
+        </div>
+        <hr />
+        <app-team-card-items></app-team-card-items>
+        <app-team-card-items></app-team-card-items>
+        <app-team-card-items></app-team-card-items>
+        <app-team-card-items></app-team-card-items>
+        <app-team-card-items></app-team-card-items>
+      </div>
+
+      <div class="rounded-lg my-4 bg-white shadow-md h-[47%]">
+        <div class="flex justify-between items-center px-5 py-4">
+          <h1 class="font-bold text-lg">Main Tasks</h1>
+          <h4 class="text-[#AEADB3] text-sm">Today</h4>
+        </div>
+        <hr />
+        <app-task-card-items></app-task-card-items>
+        <app-task-card-items></app-task-card-items>
+        <app-task-card-items></app-task-card-items>
+        <app-task-card-items></app-task-card-items>
+      </div>
+    </div>
+    <div class="rounded-lg my-4 bg-white shadow-md md:w-[25%] border">
+      <div class="flex justify-between items-center px-5 py-4">
+        <h1 class="font-bold text-lg">Daily Tasks</h1>
+        <h4 class="text-[#AEADB3] text-sm">View All</h4>
+      </div>
+      <hr />
+
+      <app-daily-tasks-items></app-daily-tasks-items>
+      <app-daily-tasks-items></app-daily-tasks-items>
+      <app-daily-tasks-items></app-daily-tasks-items>
+      <app-daily-tasks-items></app-daily-tasks-items>
+      
+    </div>
+    <div class="md:w-[33%]">
+      <div class="rounded-lg my-4 bg-white shadow-md h-[47%] py-4">
+        <div class="flex flex-col items-center gap-2">
+          <div class="md:w-[70%] my-5">
+            <img [src]="'bg image.svg'" alt="" />
+          </div>
+          <h1 class="font-bold text-lg">Track your work progress here</h1>
+          <button class="brand-button">Track Here</button>
+        </div>
+      </div>
+
+      <div class="rounded-lg my-4 bg-white shadow-md h-[47%]">
+        <div class="flex justify-between items-center px-5 py-4">
+          <h1 class="font-bold text-lg">Recent Transactions</h1>
+          <h4 class="text-[#AEADB3] text-sm">View All</h4>
+        </div>
+        <hr />
+        <div class="flex flex-col gap-3 py-4">
+          <app-recent-transaction-card-items></app-recent-transaction-card-items>
+          <app-recent-transaction-card-items></app-recent-transaction-card-items>
+          <app-recent-transaction-card-items></app-recent-transaction-card-items>
+          <app-recent-transaction-card-items></app-recent-transaction-card-items>
+          <app-recent-transaction-card-items></app-recent-transaction-card-items>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
